@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Manan | Freelance Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Manan Tote is a creative web developer, graphic designer, and video editor specializing in modern websites, mobile apps, and engaging visual content." />
+
+  <meta name="keywords"
+    content="Manan Tote, Manan Tote Portfolio, Manan Tote Developer, Manan Tote Web Developer, Manan Tote Designer, Web Developer Pune, Graphic Designer India, Video Editor, Freelance Developer, Portfolio Website" />
+
+  <meta name="author" content="Manan Tote" />
+
+  <meta name="robots" content="index, follow" />
+
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:title" content="Manan Tote | Creative Developer & Designer" />
+  <meta property="og:description"
+    content="Explore my portfolio featuring web development, graphic design, video editing, and real-world projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://manantote-portfolio.netlify.app/" />
+  <meta property="og:image" content="https://manantote-portfolio.netlify.app/assets/og-image.png" />
+
+  <!-- Bootstrap -->
+  <link rel="website icon" type="png" href="/assets/website.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+
+<body class="dark-mode">
+
+  <!-- ================= PAGE LOADER ================= -->
+  <div id="page-loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <h4 class="loader-text">
+        <span id="typing-text"></span>
+      </h4>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="#home">Manan</a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#showreel">Showreel</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#tools">Tools</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="certificate.html">Certificates</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <!-- Theme Toggle -->
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="theme-toggle">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero-section">
+
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-duration="900">
+
+          <p class="hero-greeting">👋 Hello, I'm</p>
+          <h1 class="hero-name">Manan</h1>
+
+          <!-- Typing animation -->
+          <div class="hero-typing-wrapper">
+            <span class="hero-typing-prefix">I'm a </span>
+            <span id="hero-typed" class="hero-typed-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-description">
+            I create engaging websites, professional designs and cinematic video edits
+            that help brands and businesses stand out in the digital world.
+          </p>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-top">
+                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-top">
+                <span class="stat-number" data-target="2">0</span>
+              </div>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-top">
+                <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Tools</span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="hero-buttons">
+            <a href="assets/cv/Manan Resume.pdf" download class="btn hero-btn-primary" id="btn-download-cv">
+              <i class="bi bi-download"></i> Download CV
+            </a>
+            <a href="#projects" class="btn hero-btn-secondary" id="btn-view-projects">
+              View Projects <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: LOTTIE + FLOATING BADGES -->
+        <div class="col-lg-6 hero-visual" data-aos="fade-left" data-aos-delay="200" data-aos-duration="900">
+          <div class="hero-lottie-wrapper">
+
+            <!-- Floating Skill Badge Cards -->
+            <div class="skill-badge photoshop">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
+                alt="Photoshop">
+              <span>Photoshop</span>
+            </div>
+            <div class="skill-badge premiere">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"
+                alt="Premiere Pro">
+              <span>Premiere Pro</span>
+            </div>
+            <div class="skill-badge aftereffects">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                alt="After Effects">
+              <span>After Effects</span>
+            </div>
+            <div class="skill-badge js">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+
+            <!-- Lottie Animation -->
+            <div id="lottie-hero" class="lottie-animation"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT: PHOTO -->
+        <div class="col-md-5 text-center about-image" data-aos="fade-right">
+          <div class="profile-frame">
+            <img src="assets/manan.png" alt="Manan Tote Profile Photo">
+          </div>
+
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="col-md-7 about-image" data-aos="fade-left">
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="about-intro">
+            I'm <strong>Manan Tote</strong>, a multifaceted professional in graphic design, video editing, and front-end
+            development.
+            With a passion for creative expression and technological innovation, I thrive on bringing ideas to life
+            through visual storytelling and seamless digital experiences. Let's collaborate and create something
+            extraordinary together. </p>
+
+          <!-- Tabs -->
+          <div class="about-tabs">
+            <button class="tab-btn active" data-tab="experience">Experience</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content active" id="experience">
+
+            <div class="experience-item">
+              <span class="dot"></span>
+              <div class="experience-text">
+                <h6>ProAzure Software Solution Pvt. Ltd.</h6>
+                <p>Internship – Mobile Application Development</p>
+
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <span class="dot"></span>
+              <div class="experience-text">
+                <h6>DD Digital Solution</h6>
+                <p>Internship – Video Editing & Graphic Design</p>
+
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <span class="dot"></span>
+              <div class="experience-text">
+                <h6>Freelancing</h6>
+                <p>Web Development, Graphic Design & Video Editing</p>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+          <div class="tab-content" id="education">
+
+            <div class="education-grid">
+
+              <!-- LEFT COLUMN -->
+              <div>
+                <div class="experience-item">
+                  <span class="dot"></span>
+                  <div class="experience-text">
+                    <h6>SSC (10th Standard)</h6>
+                    <p>78.60%</p>
+                    <small>Passed – 2021</small>
+                  </div>
+                </div>
+
+                <div class="experience-item">
+                  <span class="dot"></span>
+                  <div class="experience-text">
+                    <h6>HSC (12th Standard)</h6>
+                    <p>74.17%</p>
+                    <small>Passed – 2023</small>
+                  </div>
+                </div>
+
+                <div class="experience-item">
+                  <span class="dot"></span>
+                  <div class="experience-text">
+                    <h6>Diploma in Computer Engineering</h6>
+                    <p>92.60%</p>
+                    <small>Passed – 2025</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT COLUMN -->
+              <div class="education-right">
+                <div class="experience-item">
+                  <span class="dot"></span>
+                  <div class="experience-text">
+                    <h6>Bachelor of Technology (Information Technology)</h6>
+                    <p>3rd Semester – 9.05 CGPA</p>
+                    <small>Currently Pursuing</small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Work That I Can <span class="accent">Do</span>:</h2>
+
+      <div class="services-grid">
+
+        <!-- Video Editing -->
+        <div class="service-card" data-aos="zoom-in">
+          <div class="service-icon">
+            🎬
+          </div>
+          <h4>Video Editing</h4>
+          <p>
+            I specialize in video editing and short animations,
+            bringing creative visions to life with flair and precision.
+          </p>
+          <a href="video-editing.html" class="read-more">Read more</a>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="service-card" data-aos="zoom-in">
+          <div class="service-icon">
+            ✏️
+          </div>
+          <h4>Graphic Designer</h4>
+          <p>
+            With a keen eye for detail, I bring ideas to life
+            through captivating visuals as a graphic designer and UI/UX designer.
+          </p>
+          <a href="graphic-design.html" class="read-more">Read more</a>
+        </div>
+
+        <!-- Web Development -->
+        <div class="service-card" data-aos="zoom-in">
+          <div class="service-icon">
+            💻
+          </div>
+          <h4>Web Developer</h4>
+          <p>
+            With a focus on aesthetics and functionality,
+            I create visually stunning websites that resonate with users and customer.
+          </p>
+          <a href="web-development.html" class="read-more">Read more</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">
+        Featured <span class="accent">Projects</span>
+      </h2>
+      <p class="section-subtitle">
+        Real-world projects demonstrating my development skills
+        across web, mobile, and machine learning.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <a href="video.html" class="project-link">
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-img">
+              <img src="assets/pothole.jpeg" alt="Pothole Detection Project">
+            </div>
+            <div class="project-content">
+              <h4>Potholes & Road Humps Detection</h4>
+              <p>
+                Object detection system to identify potholes and road humps
+                in foggy conditions using the YOLO model.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>YOLO</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Project 2 -->
+        <a href="video.html" class="project-link">
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-img">
+              <img src="assets/broker.png" alt="Broker App Flutter">
+            </div>
+            <div class="project-content">
+              <h4>Broker Application</h4>
+              <p>
+                Mobile application developed using Flutter for property
+                listing, broker interaction, and user management.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Mobile App</span>
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+        <!-- Project 3 -->
+        <a href="video.html" class="project-link">
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-img">
+              <img src="assets/eldercare.png" alt="Eldercare Website">
+            </div>
+            <div class="project-content">
+              <h4>Eldercare Website</h4>
+              <p>
+                A responsive website designed to support eldercare services,
+                including information, contact, and service management.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOWREEL SECTION ================= -->
+  <section id="showreel" class="showreel-section">
+    <div class="container">
+      <h2 class="section-title">
+        My <span class="accent">Showreel</span>
+      </h2>
+      <p class="section-subtitle">
+        Selected Instagram reels showcasing my video editing work.
+      </p>
+
+      <!-- Reels Grid -->
+      <div class="showreel-grid">
+
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQZRdGkDVxo/"
+          data-instgrm-version="14"></blockquote>
+
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSPCrIQjZ6m/"
+          data-instgrm-version="14"></blockquote>
+
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DRFHTEqjdpm/"
+          data-instgrm-version="14"></blockquote>
+
+        <!-- <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_4/"
+        data-instgrm-version="14"></blockquote>
+
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_5/"
+        data-instgrm-version="14"></blockquote>
+
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_6/"
+        data-instgrm-version="14"></blockquote> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Embed Script (ADD ONCE ONLY) -->
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+
+  <!-- ================= TOOLS SECTION ================= -->
+  <section id="tools" class="tools-section">
+    <div class="container">
+      <h2 class="section-title">
+        Tools & <span class="accent">Technologies</span>
+      </h2>
+
+      <!-- VIDEO EDITING -->
+      <div class="tools-category">
+        <h4>🎬 Video Editing</h4>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg"
+              alt="Premiere Pro" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg"
+              alt="After Effects" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/davinci.png" alt="DaVinci Resolve" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"
+              alt="Blender" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/capcut.png" alt="Capcut" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/apple.png" alt="Final Cut Pro" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/alightmotion.png" alt="Alight Motion" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/vn.png" alt="VN" data-aos="flip-left">
+          </div>
+        </div>
+      </div>
+
+      <!-- GRAPHIC DESIGN -->
+      <div class="tools-category">
+        <h4>🎨 Graphic Designing</h4>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+              alt="Photoshop" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg"
+              alt="Illustrator" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/photoshop-lightroom.png" alt="Lightroom" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/draw.png" alt="CorelDRAW" data-aos="flip-left">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CODING -->
+      <div class="tools-category">
+        <h4>💻 Coding & Development</h4>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              alt="C++" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"
+              data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="JavaScript" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+              alt="Firebase" data-aos="flip-left">
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/tools/github.png" alt="Hosting / GitHub" data-aos="flip-left">
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title text-center">
+        Contact <span class="accent">Me</span>
+      </h2>
+
+      <div class="row mt-5">
+
+        <!-- LEFT -->
+        <div class="col-md-4 contact-left">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:tmanan2006@gmail.com" class="link-custom">
+              tmanan2006@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+919699266524" class="link-custom">
+              +91 9699266524
+            </a>
+          </p>
+
+          <h5 class="mt-4">Social Media</h5>
+
+          <!-- SOCIAL ICONS -->
+          <ul class="social-list">
+            <li class="item">
+              <a href="https://www.instagram.com/allabout.manan/" target="_blank">
+                <i class="bi bi-instagram icon"></i>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="https://www.linkedin.com/in/manantote/" target="_blank">
+                <i class="bi bi-linkedin icon"></i>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="https://wa.me/919699266524" target="_blank">
+                <i class="bi bi-whatsapp icon"></i>
+              </a>
+            </li>
+
+            <!-- <li class="item">
+            <a href="#" target="_blank">
+              <i class="bi bi-twitter-x icon"></i>
+            </a>
+          </li> -->
+
+            <li class="item">
+              <a href="https://github.com/Manantote" target="_blank">
+                <i class="bi bi-github icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-md-8 contact-right">
+          <form id="contact-form">
+
+            <input type="text" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-delay="100">
+            <input type="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="200">
+            <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required
+              data-aos="fade-up" data-aos-delay="300">
+            <textarea rows="6" name="message" placeholder="Your Message" data-aos="fade-up"
+              data-aos-delay="400"></textarea>
+
+            <button type="submit" class="btn btn-primary mt-3">
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="copyright">
+        <p>
+          © 2025 · Made with ❤️ by <strong>Manan</strong>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("page-loader");
+      loader.classList.add("hidden");
+    });
+
+    const words = ["Loading", "Preparing Portfolio", "Welcome"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingElement = document.getElementById("typing-text");
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+
+      if (!isDeleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex++);
+        if (charIndex > currentWord.length) {
+          setTimeout(() => isDeleting = true, 800);
+        }
+      } else {
+        typingElement.textContent = currentWord.substring(0, charIndex--);
+        if (charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      }
+
+      setTimeout(typeEffect, isDeleting ? 60 : 120);
+    }
+
+    typeEffect();
+
+    // ── Lottie animation ──────────────────────────────────────────
+    const lottieContainer = document.getElementById("lottie-hero");
+    if (lottieContainer) {
+      lottie.loadAnimation({
+        container: lottieContainer,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/lottie/web-designer.json"
+      });
+    }
+
+    // ── Hero typing animation ─────────────────────────────────────
+    const heroRoles = ["Graphic Designer", "Video Editor", "Web Developer", "Freelancer"];
+    let heroRoleIndex = 0;
+    let heroCharIndex = 0;
+    let heroDeleting = false;
+    const heroTyped = document.getElementById("hero-typed");
+
+    function heroTypeEffect() {
+      if (!heroTyped) return;
+      const word = heroRoles[heroRoleIndex];
+      if (!heroDeleting) {
+        heroTyped.textContent = word.substring(0, ++heroCharIndex);
+        if (heroCharIndex === word.length) {
+          setTimeout(() => { heroDeleting = true; heroTypeEffect(); }, 1800);
+          return;
+        }
+      } else {
+        heroTyped.textContent = word.substring(0, --heroCharIndex);
+        if (heroCharIndex === 0) {
+          heroDeleting = false;
+          heroRoleIndex = (heroRoleIndex + 1) % heroRoles.length;
+        }
+      }
+      setTimeout(heroTypeEffect, heroDeleting ? 55 : 110);
+    }
+    setTimeout(heroTypeEffect, 600);
+
+    // ── Counter animation ─────────────────────────────────────────
+    function animateCounters() {
+      document.querySelectorAll(".stat-number").forEach(el => {
+        const target = +el.dataset.target;
+        const step = Math.ceil(target / 30);
+        let current = 0;
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current;
+          if (current >= target) clearInterval(timer);
+        }, 50);
+      });
+    }
+
+    // Trigger counters when hero is in view
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounters(); heroObserver.disconnect(); } });
+    }, { threshold: 0.3 });
+    const heroStatsEl = document.querySelector(".hero-stats");
+    if (heroStatsEl) heroObserver.observe(heroStatsEl);
+
+    // ── GSAP parallax on hero visual ─────────────────────────────
+    const heroSection = document.querySelector(".hero-section");
+    if (heroSection) {
+      gsap.to(".hero-visual", {
+        y: 60,
+        scrollTrigger: {
+          trigger: heroSection,
+          start: "top top",
+          end: "bottom top",
+          scrub: true
+        }
+      });
+    }
+
+    // ── Active nav on scroll ──────────────────────────────────────
+    const sections = document.querySelectorAll("section");
+    const buttons = document.querySelectorAll(".floating-btn");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        if (scrollY >= section.offsetTop - 200) current = section.getAttribute("id");
+      });
+      buttons.forEach(btn => {
+        btn.classList.remove("active");
+        if (btn.dataset.target === current) btn.classList.add("active");
+      });
+    });
+
+  </script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      once: false,     // 🔥 re-animate on scroll up/down
+      mirror: true     // 🔥 animate when scrolling back
+    });
+  </script>
+
+  <!--Email.js-->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script>
+    (function () {
+      emailjs.init("hWRitkI2BVNwES_Vo");
+    })();
+  </script>
+
+  <script>
+    const form = document.getElementById("contact-form");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+          "service_wcah0c8",
+          "template_h6oindh",
+          this
+        ).then(() => {
+          alert("Message sent successfully 🚀");
+          form.reset();
+        }).catch((error) => {
+          alert("Failed to send message ❌");
+          console.error(error);
+        });
+      });
+    }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Manan Tote",
+  "url": "https://manantote-portfolio.netlify.app/",
+  "jobTitle": "Web Developer & Designer",
+  "sameAs": [
+    "https://www.instagram.com/allabout.manan/",
+    "https://www.linkedin.com/in/manantote/",
+    "https://github.com/Manantote"
+  ]
+}
+</script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
