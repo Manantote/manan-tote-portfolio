@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificates | Manan Tote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-mode">
+
+<!-- ================= PAGE LOADER (SAME AS OTHERS) ================= -->
+<div id="page-loader">
+  <div class="loader-content">
+    <div class="loader-ring"></div>
+    <h4 class="loader-text"><span id="typing-text"></span></h4>
+  </div>
+</div>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="certificates-section">
+  <div class="container">
+
+    <h2 class="section-title text-center">
+      My <span class="accent">Certificates</span>
+    </h2>
+
+    
+
+    <div class="certificates-grid">
+
+      <!-- Certificate Card -->
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/paper.jpg" alt="Certificate 1">
+        <div class="certificate-content">
+          <h5>Research Paper Publication – IRJMETS (Feb 2025)</h5>
+          <p>
+           Published a peer-reviewed research paper on YOLO-based pothole and road hump detection using IoT and deep learning for foggy environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/GPP.jpg" alt="Certificate 2">
+        <div class="certificate-content">
+          <h5>State Level Technical Paper Presentation – MSBTE Sponsored (Sept 2024)</h5>
+          <p>
+           Participated in an MSBTE-sponsored state-level paper presentation, enhancing technical communication and research skills.
+            </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/logo.jpg" alt="Certificate 3">
+        <div class="certificate-content">
+          <h5>Tech Fiesta 2K24 – Logo Making (Second Prize)</h5>
+          <p>
+           Secured Second Prize in a logo-making competition, recognized for creativity and design aesthetics.
+          </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/MAD.jpg" alt="Certificate 4">
+        <div class="certificate-content">
+          <h5>Internship Certificate – ProAzure Software Solutions Pvt. Ltd. (July 2024)</h5>
+          <p>
+           Completed a 6-week internship in Mobile Application Development, gaining hands-on experience in real-world app development.
+          </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/zeal.jpg" alt="Certificate 5">
+        <div class="certificate-content">
+          <h5>Zeal TechCarnival 2K25 – Logo Artistry (Feb 2025)</h5>
+          <p>
+          Participated in a state-level technical competition, showcasing creativity and visual branding skills through logo design.
+        </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/AIML.jpg" alt="Certificate 6">
+        <div class="certificate-content">
+          <h5>AI & Machine Learning Workshop – Innovatus Technologies (March 2025)</h5>
+          <p>
+           Completed a 3-day workshop covering fundamentals of AI, Machine Learning, and Deep Learning with practical insights.
+        </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/Anant.jpg" alt="Certificate 7">
+        <div class="certificate-content">
+          <h5>State Level Project Competition – Anant Nirmal Techutsav 2K25</h5>
+          <p>
+           Presented an innovative technical project at a state-level competition, demonstrating problem-solving and presentation skills.
+        </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/bootstrap.jpg" alt="Certificate 8">
+        <div class="certificate-content">
+          <h5>Bootstrap Course – Great Learning Academy</h5>
+          <p>
+            Completed an online course on Bootstrap, focusing on responsive and mobile-first web design.
+        </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/Java.jpg" alt="Certificate 6">
+        <div class="certificate-content">
+          <h5>Java & MySQL Workshop – Innovatus Technologies</h5>
+          <p>
+                Successfully completed a 3-day workshop on Java programming and MySQL database fundamentals.
+            </p>
+        </div>
+      </div>
+
+      <div class="certificate-card" data-aos="fade-up">
+        <img src="assets/certificates/infosys.jpg" alt="Certificate 6">
+        <div class="certificate-content">
+          <h5>DSA Using Java - Infosys </h5>
+          <p>
+                Successfully completed a Course certificate by get 90% in Test.
+            </p>
+        </div>
+      </div>
+      <!-- Duplicate for remaining certificates -->
+      <!-- cert2.jpg ... cert9.jpg -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="content-writing" class="service-cta">
+  <div class="container text-center">
+    
+    <a href="index.html" class="read-more mt-4 d-inline-block">← Back to Home</a>
+  </div>
+</section>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("page-loader");
+    loader.classList.add("hidden");
+  });
+
+    const words = ["Loading", "Preparing Portfolio", "Welcome"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typingElement = document.getElementById("typing-text");
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+      typingElement.textContent = currentWord.substring(0, charIndex++);
+      if (charIndex > currentWord.length) {
+        setTimeout(() => isDeleting = true, 800);
+      }
+    } else {
+      typingElement.textContent = currentWord.substring(0, charIndex--);
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 120);
+  }
+
+  typeEffect();
+
+</script>
+
+</body>
+</html>
